@@ -1,0 +1,25 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label=<cubicinches &le; 169.5<br/>gini = 0.543<br/>samples = 179<br/>value = [33, 35, 111]<br/>class =  US.>, fillcolor="#bc96f1"] ;
+1 [label=<year &le; 1981.5<br/>gini = 0.66<br/>samples = 92<br/>value = [32, 35, 25]<br/>class =  Japan.>, fillcolor="#f5fef9"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label=<weightlbs &le; 2937.5<br/>gini = 0.639<br/>samples = 74<br/>value = [32, 27, 15]<br/>class =  Europe.>, fillcolor="#fcf2ea"] ;
+1 -> 2 ;
+3 [label=<gini = 0.644<br/>samples = 66<br/>value = [25, 27, 14]<br/>class =  Japan.>, fillcolor="#f5fef9"] ;
+2 -> 3 ;
+4 [label=<gini = 0.219<br/>samples = 8<br/>value = [7, 0, 1]<br/>class =  Europe.>, fillcolor="#e99355"] ;
+2 -> 4 ;
+5 [label=<mpg &le; 31.3<br/>gini = 0.494<br/>samples = 18<br/>value = [0, 8, 10]<br/>class =  US.>, fillcolor="#e6d7fa"] ;
+1 -> 5 ;
+6 [label=<gini = 0.219<br/>samples = 8<br/>value = [0, 1, 7]<br/>class =  US.>, fillcolor="#9355e9"] ;
+5 -> 6 ;
+7 [label=<gini = 0.42<br/>samples = 10<br/>value = [0, 7, 3]<br/>class =  Japan.>, fillcolor="#8ef0b7"] ;
+5 -> 7 ;
+8 [label=<cylinders &le; 5.5<br/>gini = 0.023<br/>samples = 87<br/>value = [1, 0, 86]<br/>class =  US.>, fillcolor="#823be5"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label=<gini = 0.0<br/>samples = 1<br/>value = [1, 0, 0]<br/>class =  Europe.>, fillcolor="#e58139"] ;
+8 -> 9 ;
+10 [label=<gini = 0.0<br/>samples = 86<br/>value = [0, 0, 86]<br/>class =  US.>, fillcolor="#8139e5"] ;
+8 -> 10 ;
+}
