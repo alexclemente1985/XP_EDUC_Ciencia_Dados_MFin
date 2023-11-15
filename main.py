@@ -1,4 +1,5 @@
 # This is a sample Python script.
+from lib_lessons.matplotlib_lesson import matplotlib_lesson
 from lib_lessons.numpy_lesson import numpy_lesson
 from lib_lessons.pandas_lesson import pandas_lesson
 
@@ -8,12 +9,14 @@ from lib_lessons.pandas_lesson import pandas_lesson
 
 
 def lib_lessons():
-    aula = input("Escolha a aula -> Numpy(np) | Pandas(pd)")
+    aula = input("Escolha a aula -> Numpy(np) | Pandas(pd) | Matplotlib(mpl)")
     match aula.lower():
         case "np":
             numpy_lesson()
         case "pd":
             pandas_lesson()
+        case "mpl":
+            matplotlib_lesson()
         case other:
             print("Escolha inválida...")
 
