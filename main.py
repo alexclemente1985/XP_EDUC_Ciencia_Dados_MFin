@@ -2,6 +2,7 @@
 from lib_lessons.matplotlib_lesson import matplotlib_lesson
 from lib_lessons.numpy_lesson import numpy_lesson
 from lib_lessons.pandas_lesson import pandas_lesson
+from lib_lessons.scikit_lesson import scikit_lesson
 
 
 # Press ⌃R to execute it or replace it with your code.
@@ -17,6 +18,8 @@ def lib_lessons():
             pandas_lesson()
         case "mpl":
             matplotlib_lesson()
+        case "sckl":
+            scikit_lesson()
         case other:
             print("Escolha inválida...")
 
